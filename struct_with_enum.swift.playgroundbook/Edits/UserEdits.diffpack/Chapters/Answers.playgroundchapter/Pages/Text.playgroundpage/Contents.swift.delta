@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Created by: David Wang
+// Created on: Dec-2017
+// Created for: ICS3U
+// Daily Assignment - Unit6-04
+// This program displays an example of a structure with two enumerated types, with preset selections
+
+var street = String("Street")
+var boulevard = String("Boulevard")
+var road = String("Road")
+var avenue = String("Avenue")
+var crescent = String("Crescent")
+let selectedStreetType = ("Road")
+
+var AB = String("AB")
+var BC = String("BC")
+var MB = String("MB")
+var NB = String("NB")
+var NL = String("NL")
+var NT = String("NT")
+var NS = String("NA")
+var NU = String("NU")
+var ON = String("ON")
+var PE = String("PE")
+var QC = String("QC")
+var SK = String("SK")
+var YT = String("YT")
+let selectedProvince = ("ON")
+
+struct address {
+    var name: String
+    var streetNumber: String
+    var streetName: String
+    var streetType: String
+    var city: String
+    var province: String
+    var postalCode: String
+}
+
+var userName = ("Bob")
+var userStreetNumber = ("123 ")
+var userStreetName = ("Claridge")
+var userStreetType = ask("What is your street type")
+
+switch userStreetType {
+case street:
+    street = selectedStreetType
+case boulevard:
+    boulevard = selectedStreetType
+case road:
+    road = selectedStreetType
+case avenue:
+    avenue = selectedStreetType
+case crescent:
+    crescent = selectedStreetType
+    
+default:
+    show("Invalid")
+}
+
+var userCity = ("Ottawa")
+var userProvince = ask("What is your province")
+
+switch userProvince {
+case AB:
+    AB = selectedProvince
+case BC:
+    BC = selectedProvince
+case MB:
+    MB = selectedProvince
+case NB:
+    NB = selectedProvince
+case NL:
+    NL = selectedProvince
+case NT:
+    NT = selectedProvince
+case NS:
+    NS = selectedProvince
+case NU:
+    NU = selectedProvince
+case ON:
+    ON = selectedProvince
+case PE:
+    PE = selectedProvince
+case QC:
+    QC = selectedProvince
+case SK:
+    SK = selectedProvince
+case YT:
+    YT = selectedProvince
+    
+default:
+    show("Invalid")
+}
+
+var userPostalCode = ("K2J4J5")
+
+let userAddress = address(name: userName, streetNumber: userStreetNumber, streetName: userStreetName, streetType: userStreetType, city: userCity, province: userProvince, postalCode: userPostalCode)
+
+show(userAddress.name)
+show(userAddress.streetNumber + " " + userAddress.streetName + " " + userAddress.streetType)
+show(userAddress.city + " " + userAddress.province + "   " + userAddress.postalCode)
+</string>
+			<key>ModifiedRange</key>
+			<string>{145, 2367}</string>
+			<key>OriginalContent</key>
+			<string>show("What is your name?")
+
+let name = ask("Name")
+
+show("Hi " + name)
+</string>
+			<key>OriginalRange</key>
+			<string>{145, 71}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Answers.playgroundchapter/Pages/Text.playgroundpage/Contents.swift</string>
+</dict>
+</plist>
